@@ -1,0 +1,21 @@
+< THE SYMBOL TABLE >  lab3.exe  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+STACK                    	00000     	-5        	SEGMENT   	(ITSELF)  
+DATA                     	00010     	-5        	SEGMENT   	(ITSELF)  
+CODE                     	00010     	-5        	SEGMENT   	(ITSELF)  
+MAIN                     	00000     	-1        	NEAR      	code      
+S_DCL_LOC1TMP            	0000C     	1         	VAR       	code      
+SKIP_DCL_LOC1TMP         	0001F     	-1        	LABEL     	code      
+NEXT_CHAR_LOC1TMP        	00022     	-1        	LABEL     	code      
+PRINTED_LOC1TMP          	00030     	-1        	LABEL     	code      
+SHOW                     	00036     	-1        	LABEL     	code      
+S_DCL_LOC2TMP            	0003A     	1         	VAR       	code      
+SKIP_DCL_LOC2TMP         	00048     	-1        	LABEL     	code      
+NEXT_CHAR_LOC2TMP        	0004B     	-1        	LABEL     	code      
+PRINTED_LOC2TMP          	00059     	-1        	LABEL     	code      
+===================================================================================================
+[ 9/17/2025  --  3:29:10 PM ] 
+< END >
+ 

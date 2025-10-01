@@ -1,0 +1,28 @@
+.model small
+.stack 100h
+.data
+num dw 5,10,15
+res dw 0
+
+.code
+main proc
+mov ax, @data
+mov ds, ax
+
+xor ax, ax            ; clear AX (sum)
+mov bx, offset num    ; point to array
+mov cx, 3             ; loop counter
+
+first_loop:
+add ax, word ptr [bx] ; add current number
+add bx, 2             ; next word (since dw=2 bytes)
+loop first_loop
+
+mov word ptr res, ax  ; store sum in res
+
+mov ax, 4c00h
+int 21h
+main endp
+end main
+
+

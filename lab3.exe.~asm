@@ -1,0 +1,27 @@
+
+include 'emu8086.inc'
+.model small
+.stack 100h
+.data
+.code
+
+main proc
+mov al,10
+mov bl,10
+CMP al,bl
+
+JE show
+
+print 'both are not same '
+
+mov ah,4ch
+int 21h
+show:
+print 'both are same'
+
+mov ah,4ch
+int 21h
+main endp
+end main
+
+

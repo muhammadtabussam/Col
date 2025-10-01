@@ -1,0 +1,28 @@
+include 'emu8086.inc'
+
+.model small
+.stack 100h
+
+.data
+; (No data section used in this example)
+
+.code
+main proc
+mov ax, @data      ; Initialize data segment
+mov ds, ax
+
+mov bx, 3          ; Store 3 in BX
+mov cx, 2          ; Store 2 in CX
+sub bx, cx         ; BX = BX - CX (3 - 2 = 1)
+
+; Optionally display result
+; call PrintNum
+; mov ax, bx
+; call PrintNum
+
+mov ax, 4C00h      ; Terminate program
+int 21h
+main endp
+end main
+
+

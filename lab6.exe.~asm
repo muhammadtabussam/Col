@@ -1,0 +1,24 @@
+.model small
+.stack 100h
+.data
+num dw 8
+evennum dw ?
+
+.code
+main proc
+mov ax, @data
+mov ds, ax
+
+mov ax, num
+test ax, 1
+jnz not_even
+
+mov evennum, ax
+
+not_even:
+mov ah, 4ch
+int 21h
+main endp
+end main
+
+

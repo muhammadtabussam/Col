@@ -1,0 +1,31 @@
+.model small
+.stack 100h
+.data
+nums dw 9, 2, ?
+.code
+main:
+mov ax, @data
+mov ds, ax
+
+mov ax, nums
+sub ax, nums+2
+mov nums+4, ax
+
+mov ax, nums+4
+mov bl, 10
+div bl
+
+add al, '0'
+mov dl, al
+mov ah, 2
+int 21h
+
+add ah, '0'
+mov dl, ah
+mov ah, 2
+int 21h
+
+mov ax, 4C00h
+int 21h
+end main
+

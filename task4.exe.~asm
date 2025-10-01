@@ -1,0 +1,22 @@
+include 'emu8086.inc'
+
+.model small
+.stack 100h
+.data
+.code
+
+main proc
+mov ax,10100
+mov bx,01010
+or ax,bx
+xor ax,bx
+mov dx,ax
+
+mov ah,2
+int 21h
+mov ah,4ch
+int 21h
+main endp
+end main
+
+

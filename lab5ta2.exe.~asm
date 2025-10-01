@@ -1,0 +1,25 @@
+include 'emu8086.inc'
+.stack 100h
+.model small
+.data
+.code
+main proc
+; program to subtract two digits and store result in memory
+
+
+mov bx, [data1]     ; Load value at data1 into BX
+mov cx, [data2]     ; Load value at data2 into CX
+sub bx, cx          ; BX = data1 - data2
+mov [result], bx    ; Store result in memory at 'result'
+
+mov ax, 0x4C00      ; Terminate program
+int 0x21
+
+data1: dw 3
+data2: dw 2
+result: dw 0        ; Memory location to store result
+
+
+main endp
+end main
+

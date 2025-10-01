@@ -1,0 +1,16 @@
+< THE SYMBOL TABLE >  lab5tas2.exe  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+STACK                    	00000     	-5        	SEGMENT   	(ITSELF)  
+DATA                     	00010     	-5        	SEGMENT   	(ITSELF)  
+CODE                     	00010     	-5        	SEGMENT   	(ITSELF)  
+MAIN                     	00000     	-1        	NEAR      	code      
+DATA1                    	00002     	-1        	LABEL     	code      
+DATA2                    	00004     	-1        	LABEL     	code      
+RESULT                   	00006     	-1        	LABEL     	code      
+START                    	00008     	-1        	LABEL     	code      
+===================================================================================================
+[ 9/24/2025  --  3:30:45 PM ] 
+< END >
+ 
